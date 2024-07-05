@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Review Box</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-tomorrow.min.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(245, 245, 245);
+}
+
+.code-box {
+    position: relative;
+    background-color: rgb(45, 45, 45);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+pre {
+    margin: 0;
+    overflow: auto;
+}
+
+code {
+    display: block;
+    padding: 16px;
+    background-color: rgb(45, 45, 45);
+    color: rgb(248, 248, 242);
+    font-family: Consolas, "Courier New", monospace;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 16px;
+    background-color: rgb(76, 175, 80);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(69, 160, 73);
+}
+
+    </style>
+    
+
+</head>
+<body>
+    <div class="code-box">
+        <pre>
+            <code id="code-snippet" class="language-python">
+
+            </code>
+        </pre>
+        <button id="copy-button">Copy</button>
+    </div>
+    
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    
+    <script>const codeSnippet = `
+    # Your code goes here
+    def hello_world():
+    print("Hello, world!")`;
+
+function typeCode(element, text, delay = 50) {
+    let index = 0;
+    function type() {
+        if (index < text.length) {
+            element.textContent += text[index++];
+            Prism.highlightElement(element);
+            setTimeout(type, delay);
+        }
+    }
+    type();
+}
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const codeElement = document.getElementById('code-snippet');
+    typeCode(codeElement, codeSnippet);
+});
+
+document.getElementById('copy-button').addEventListener('click', function() {
+    const codeText = document.getElementById('code-snippet').textContent;
+    navigator.clipboard.writeText(codeText).then(function() {
+        alert('Code copied to clipboard!');
+    }).catch(function(error) {
+        alert('Failed to copy code: ', error);
+    });
+});
+
+</script>
+</body>
+</html>

@@ -1,5 +1,27 @@
-Your code you can show on your website like this board it's coded in html css and js but it's all coded in one html file 
-Contract if there is any problem,
-Facebook: https://www.facebook.com/sunilbmishra?mibextid=ZbWKwL
-Instagram : https://www.instagram.com/sunil_mishra_officially?igsh=YnhtaGdidzA2ZWNs
-WhatsApp: https://wa.me/message/Q6VOE2NME6UAP1
+# Follow Steps
+### Example code
+document.getElementById('copy-button').addEventListener('click', function() {
+    const codeSnippet = document.getElementById('code-snippet').textContent;
+    navigator.clipboard.writeText(codeSnippet).then(function() {
+        alert('Code copied to clipboard!');
+    }).catch(function(error) {
+        alert('Failed to copy code: ', error);
+    });
+});
+
+follow step 
+ using JavaScript 
+ 1. ```start code```
+ 2. ```end code ```
+ 
+ Code using problems face contract from me my profile chak out pin my sosal platform any qustan sent fro me 
+ 
+ 
+ ## [+] Find Me on :
+[![Github](https://img.shields.io/badge/Github-HTR--TECH-green?style=for-the-badge&logo=github)](https://github.com/cybersunilmishra)
+[![Instagram](https://img.shields.io/badge/IG-%40tahmid.rayat-red?style=for-the-badge&logo=instagram)](https://www.instagram.com/sunil_mishra_officially)
+[![Messenger](https://img.shields.io/badge/Chat-Messenger-blue?style=for-the-badge&logo=messenger)](https://m.me/sunilmishraofficially)
+[![Messenger](https://img.shields.io/badge/Chat-Messenger-blue?style=for-the-badge&logo=messenger)](https://m.me/sunilmishraofficially)
+
+## Thankyou
+

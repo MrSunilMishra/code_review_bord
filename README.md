@@ -26,7 +26,7 @@ follow step
 
  ## [+] Find Me on :
  
-[![Github](https://img.shields.io/badge/Github-CYBER--SUNIL--MISHRA-green?style=for-the-badge&logo=github)](https://github.com/cybersunilmishra)
+[![Github](https://img.shields.io/badge/Github-Syber--Tech--sunil-green?style=for-the-badge&logo=github)](https://github.com/sybertechsunil)
 [![Instagram](https://img.shields.io/badge/Instagram-%40sunil_mishra_officially-red?style=for-the-badge&logo=instagram)](https://www.instagram.com/sunil_mishra_officially)
 [![Messenger](https://img.shields.io/badge/Chat-Messenger-blue?style=for-the-badge&logo=messenger)](https://m.me/sunilmishraofficially)
 
